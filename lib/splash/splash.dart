@@ -53,7 +53,7 @@ class _SplashState extends State<Splash> {
             InkWell(
               onTap: () => Navigator.pushNamed(context, Constants.onboarding),
               child: Image.asset(
-                'assets/images/FoodVybeLogo@3xBlue.png',
+                'assets/FoodVybeLogo@3xBlue.png',
                 fit: BoxFit.contain,
                 width: width * .76,
               ),
