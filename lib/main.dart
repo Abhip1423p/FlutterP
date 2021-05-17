@@ -44,9 +44,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:
-      profile()
+      //profile()
       //EventB()
-      //DashdBoard()
+      DashdBoard()
       //ListingA(),
       //BookA(),
       //Splash(),
