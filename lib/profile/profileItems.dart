@@ -8,555 +8,849 @@ class profileItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return
-      SingleChildScrollView(
-        physics:BouncingScrollPhysics(),
+    
+    
+    
+    
 
-        scrollDirection: Axis.horizontal,
-
-        child:
-        Column(
-          children: [
-            Row(
+          Card(
+            elevation: 0,
+           // color: Colors.grey,
+            child: Container(
+              //color: Colors.grey,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(
-                    onTap: (){
-                     // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                     // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                       //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          InkWell(
+                            onTap: (){
+                             // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                             // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                               //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
 
 
 
-                        Container(
+                                Container(
 
-                          height: 100,
+                                  height: 100,
 
-                         width: 100 ,
-                            child:
-                            Container(
+                                 width: 100 ,
+                                    child:
+                                    Container(
 
-                       height: 70,
-                          width: 70,
-                          decoration:BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage("assets/images/d.png"),
-                              fit: BoxFit.cover
-                            )
-                          ) ,
-
-
-                          //AssetImage("assets/images/d.png"),
-
-                            ),
-                            // ),
-
-                          ),
-                         Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("DashBoard"),
-                            ],
-                          )
-                        ]
-                    ),
-
-
-
-                  ),
-
-
-
-
-                  SizedBox(
-                    width: 30,
-                  ),
-
-
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
+                               height: 70,
+                                  width: 70,
+                                  decoration:BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage("assets/images/dashboard@3x.png"),
                                       fit: BoxFit.cover
+                                    )
+                                  ) ,
+
+
+                                  //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                 Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("DashBoard"),
+                                    ],
                                   )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
+                                ]
                             ),
-                            // ),
+
+
 
                           ),
-                          Divider(height: 10,),
 
-                          Row(
-                            children: [
-                              Text("Announcements"),
-                            ],
-                          )
+
+                          SizedBox(
+                            width: 30,
+                          ),
+
+
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+
+
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/microphone (1)@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Announcements"),
+                                    ],
+                                  )
+                                ]
+                            ),
+
+
+
+
+
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+
+
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/calendar (1)@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Events"),
+                                    ],
+                                  )
+                                ]
+                            ),
+
+
+
+
+
+                          ),
+
+
+
+
+
+
+
+
                         ]
+
+
+
+
                     ),
-
-
-
-
-
                   ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
 
-                    child: Column(
+             Divider(thickness: 5,
+               color: Colors.black.withOpacity(0.1),),
 
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
 
 
 
-                          Container(
+                                  Container(
 
-                            height: 100,
+                                    height: 100,
 
-                            width: 100 ,
-                            child:
-                            Container(
+                                    width: 100 ,
+                                    child:
+                                    Container(
 
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/dinner-table@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Booking"),
+                                    ],
                                   )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
+                                ]
                             ),
-                            // ),
+
+
 
                           ),
-                          Divider(height: 10,),
 
-                          Row(
-                            children: [
-                              Text("Events"),
-                            ],
-                          )
+
+
+
+                          SizedBox(
+                            width: 30,
+                          ),
+
+
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+
+
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/coupon@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Coupons"),
+                                    ],
+                                  )
+                                ]
+                            ),
+
+
+
+
+
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+
+
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/restaurant@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Menu"),
+                                    ],
+                                  )
+                                ]
+                            ),
+
+
+
+
+
+                          ),
+
+
                         ]
+
+
+
+
+
+
+
+
                     ),
-
-
-
-
-
                   ),
 
+                  Divider(thickness: 5,
+                    color: Colors.black.withOpacity(0.1),),
 
 
 
 
-
-
-
-                ]
-
-
-
-
-            ),
-
-            Divider(thickness: 10,
-            color: Colors.black,),
-
-
-            Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
 
 
 
-                          Container(
+                                  Container(
 
-                            height: 100,
+                                    height: 100,
 
-                            width: 100 ,
-                            child:
-                            Container(
+                                    width: 100 ,
+                                    child:
+                                    Container(
 
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/kaaba@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Listing"),
+                                    ],
                                   )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
+                                ]
                             ),
-                            // ),
+
+
 
                           ),
-                          Divider(height: 10,),
 
-                          Row(
-                            children: [
-                              Text("Booking"),
-                            ],
-                          )
+
+
+
+                          SizedBox(
+                            width: 30,
+                          ),
+
+
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+
+
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/email@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Inbox"),
+                                    ],
+                                  )
+                                ]
+                            ),
+
+
+
+
+
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+
+
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/invoices@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Invoices"),
+                                    ],
+                                  )
+                                ]
+                            ),
+
+
+
+
+
+                          ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         ]
+
+
+
+
+
+
+
+
                     ),
-
-
-
                   ),
 
+                  Divider(thickness: 5,
+                    color: Colors.black.withOpacity(0.1),),
 
 
 
-                  SizedBox(
-                    width: 30,
-                  ),
-
-
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
+
+                            child: Column(
+
+                              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
 
 
 
-                          Container(
+                                  Container(
 
-                            height: 100,
+                                    height: 100,
 
-                            width: 100 ,
-                            child:
-                            Container(
+                                    width: 100 ,
+                                    child:
+                                    Container(
 
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/graphic@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Analytics"),
+                                    ],
                                   )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
+                                ]
                             ),
-                            // ),
+
+
 
                           ),
-                          Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("Coupons"),
-                            ],
-                          )
-                        ]
-                    ),
 
 
 
 
-
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
 
 
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
 
-                          Container(
+                            child: Column(
 
-                            height: 100,
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
 
-                            width: 100 ,
-                            child:
-                            Container(
 
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
+
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/megaphone (1)@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
+
+
+                                      //AssetImage("assets/images/d.png"),
+
+                                    ),
+                                    // ),
+
+                                  ),
+                                  Divider(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Text("Add Campaigns"),
+                                    ],
                                   )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
+                                ]
                             ),
-                            // ),
+
+
+
+
 
                           ),
-                          Divider(height: 10,),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          InkWell(
+                            onTap: (){
+                              // Route route = MaterialPageRoute(builder: (c) => comingSoon());
+                              // Navigator.pushReplacement(context, route);
+                            },
 
-                          Row(
-                            children: [
-                              Text("Menu"),
-                            ],
-                          )
-                        ]
-                    ),
+                            child: Column(
 
-
-
-
-
-                  ),
-
-
-                ]
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
 
 
 
+                                  Container(
+
+                                    height: 100,
+
+                                    width: 100 ,
+                                    child:
+                                    Container(
+
+                                      height: 70,
+                                      width: 70,
+                                      decoration:BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/rating@3x.png"),
+                                              fit: BoxFit.cover
+                                          )
+                                      ) ,
 
 
+                                      //AssetImage("assets/images/d.png"),
 
+                                    ),
+                                    // ),
 
+                                  ),
+                                  Divider(height: 10,),
 
-            ),
-
-
-
-
-            Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
+                                  Row(
+                                    children: [
+                                      Text("Reviews"),
+                                    ],
                                   )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
+                                ]
                             ),
-                            // ),
+
+
+
+
 
                           ),
-                          Divider(height: 10,),
 
-                          Row(
-                            children: [
-                              Text("Listing"),
-                            ],
-                          )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         ]
+
+
+
+
+
+
+
+
                     ),
-
-
-
-                  ),
-
-
-
-
-                  SizedBox(
-                    width: 30,
-                  ),
-
-
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
-                                  )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
-                            ),
-                            // ),
-
-                          ),
-                          Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("Inbox"),
-                            ],
-                          )
-                        ]
-                    ),
-
-
-
-
-
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
-                                  )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
-                            ),
-                            // ),
-
-                          ),
-                          Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("Invoices"),
-                            ],
-                          )
-                        ]
-                    ),
-
-
-
-
-
                   ),
 
 
@@ -568,285 +862,16 @@ mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
 
 
+                ],
+              ),
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                ]
-
-
-
-
-
-
-
-
-            ),
-
-
-
-            Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
-                                  )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
-                            ),
-                            // ),
-
-                          ),
-                          Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("Analytics"),
-                            ],
-                          )
-                        ]
-                    ),
-
-
-
-                  ),
-
-
-
-
-                  SizedBox(
-                    width: 30,
-                  ),
-
-
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
-                                  )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
-                            ),
-                            // ),
-
-                          ),
-                          Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("Add Campaigns"),
-                            ],
-                          )
-                        ]
-                    ),
-
-
-
-
-
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  InkWell(
-                    onTap: (){
-                      // Route route = MaterialPageRoute(builder: (c) => comingSoon());
-                      // Navigator.pushReplacement(context, route);
-                    },
-
-                    child: Column(
-
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-
-
-
-                          Container(
-
-                            height: 100,
-
-                            width: 100 ,
-                            child:
-                            Container(
-
-                              height: 70,
-                              width: 70,
-                              decoration:BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage("assets/images/d.png"),
-                                      fit: BoxFit.cover
-                                  )
-                              ) ,
-
-
-                              //AssetImage("assets/images/d.png"),
-
-                            ),
-                            // ),
-
-                          ),
-                          Divider(height: 10,),
-
-                          Row(
-                            children: [
-                              Text("Reviews"),
-                            ],
-                          )
-                        ]
-                    ),
-
-
-
-
-
-                  ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                ]
-
-
-
-
-
-
-
-
-            ),
-
-
-
-
-
-
-
-
-          ],
-        ),
-
-
-
-
-      );
+      ),
+          );
 
 
   }

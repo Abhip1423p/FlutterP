@@ -1,7 +1,9 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:rest/event.dart';
+import 'package:rest/event/event.dart';
+import 'package:rest/profile/profile.dart';
+import 'package:rest/profile/profileItems.dart';
 
 import 'package:rest/profile/updP.dart';
 import 'package:rest/splash/splash.dart';
@@ -11,8 +13,12 @@ import 'package:rest/splash/splash.dart';
 
 
 import 'ContactS/address.dart';
+import 'Listing/ListingA.dart';
 import 'announce.dart';
-import 'eventsA.dart';
+import 'booking.dart';
+import 'dashBoard.dart';
+import 'event/eventB.dart';
+import 'event/eventsA.dart';
 
 
 void main() {
@@ -37,7 +43,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Splash(),
+      home:
+      profile()
+      //EventB()
+      //DashdBoard()
+      //ListingA(),
+      //BookA(),
+      //Splash(),
 
     );
   }

@@ -53,7 +53,8 @@ class Event extends StatelessWidget {
 
 
               Container(
-                child: Text(
+                child:
+                Text(
                     "you haven't made any Events yet "
                 ),
               ),

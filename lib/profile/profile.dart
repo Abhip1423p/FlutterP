@@ -11,7 +11,15 @@ class _profileState extends State<profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     // backgroundColor: Colors.grey,
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(
+            Icons.drag_handle,
+          ),
+          onPressed: (){},
+
+        ),
 
         elevation: 0,
         backgroundColor: Colors.deepPurple.shade800,
@@ -44,61 +52,67 @@ class _profileState extends State<profile> {
       ),
 
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              height: 200,
-              width: 500,
-              color: Colors.deepPurple.shade800,
+        child: Container(
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                width: 500,
+                color: Colors.deepPurple.shade800,
 
 
 
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-                child: Column(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                  child: Column(
 
-                  children: [
-                    Container(
+                    children: [
+                      Container(
 
-                      height: 100,
-                      width: 100,
-                      child: CircleAvatar(
-
-                        backgroundColor: Colors.white10,
-
-
-                        radius: 30,
+                        height: 100,
+                        width: 100,
+                        child: CircleAvatar(
 
 
 
+
+
+                          radius: 16,
+                          child:ClipRRect(
+                            child: Image.asset("assets/images/Ellipse 210@3x.png"),
+                            borderRadius: BorderRadius.circular(50.0),
+                          )
+
+
+
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text("Ashish Sharma",style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white
-                    ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text("Brewocrat -Brewery skybar & kitchen",style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white
-                    ),
-                    ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text("Ashish Sharma",style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white
+                      ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text("Brewocrat -Brewery skybar & kitchen",style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white
+                      ),
+                      ),
 
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
 SizedBox(
   height: 5,
 ),
-            profileItems(),
+              profileItems(),
 
 
 
@@ -108,7 +122,8 @@ SizedBox(
 
 
 
-          ],
+            ],
+          ),
         ),
       ),
 
