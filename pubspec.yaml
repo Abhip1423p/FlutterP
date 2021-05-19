@@ -39,6 +39,9 @@ dependencies:
   simple_animations: ^3.0.3
   syncfusion_flutter_gauges: ^19.1.57
   webview_flutter: ^2.0.4
+  dropdown_formfield: ^0.1.3
+
+
 
 
 

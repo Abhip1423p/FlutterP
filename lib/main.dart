@@ -14,11 +14,19 @@ import 'package:rest/splash/splash.dart';
 
 import 'ContactS/address.dart';
 import 'Listing/ListingA.dart';
-import 'announce.dart';
+import 'Listing/listinB.dart';
+import 'adCamp.dart';
+import 'analytics/analytics.dart';
+import 'analytics/analyticsB.dart';
+import 'annoucement/announce.dart';
+import 'annoucement/announcementB.dart';
 import 'booking.dart';
+import 'components/circleIndi.dart';
 import 'dashBoard.dart';
 import 'event/eventB.dart';
 import 'event/eventsA.dart';
+import 'inbox/inbox.dart';
+import 'inbox/inboxB.dart';
 
 
 void main() {
@@ -43,10 +51,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:
+      home: //Adc()
+    InboxB()
+// Inbox()
+      //ListingB()
+      //analyticsB()
+      //analytics()
+  //AnnouncB()
       //profile()
-      //EventB()
-      DashdBoard()
+   //EventB()
+     // DashdBoard()
       //ListingA(),
       //BookA(),
       //Splash(),

@@ -75,113 +75,146 @@ body: SingleChildScrollView(
         ),
 
 
-Card(elevation: 5,
-  child: Column(
+Padding(
+  padding: const EdgeInsets.all(8.0),
+  child:   Card(elevation: 5,
+    child: Column(
 
-    children: [
-      Container(
-        height: 40,
+      children: [
+        Container(
+          height: 40,
 
-        color: Colors.deepPurple.withOpacity(0.5),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Event",style: TextStyle(
-                 // color: Colors.deepPurpleAccent
-                ),),
-                Text("Start Date"),
-                Text("Start Time"),
-                Text("Status"),
-              ],
+          color: Colors.deepPurple.withOpacity(0.5),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Event",style: TextStyle(
+                   // color: Colors.deepPurpleAccent
+                  ),),
+                  Text("Start Date"),
+                  Text("Start Time"),
+                  Text("Status"),
+                ],
+              ),
             ),
           ),
         ),
-      ),
 
-      Container(
-height: 40,
-         // color :Color(0xFF0E3311).withOpacity(0.5),
-        color: Colors.deepPurple.withOpacity(0.1),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Event 1"),
-                Text("15 April"),
-                Text("09:30PM"),
-                Text("Active"),
-              ],
+        Container(
+  height: 40,
+           // color :Color(0xFF0E3311).withOpacity(0.5),
+          color: Colors.deepPurple.withOpacity(0.1),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Event 1"),
+                  Text("15 April"),
+                  Text("09:30PM"),
+                  Row(
+                    children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          height: 10,
+                          child: CircleAvatar(
+                            radius: 10,
+                            backgroundColor: Colors.green,
+
+                          ),
+                        ),
+                      ),
+                      Text("Active"),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),
-      ),
 
-      Container(
-height: 40,
-        color: Colors.deepPurple.withOpacity(0.2),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Event 2"),
-                Text("11 April"),
-                Text("09:30PM"),
-                Text("Inactive"),
-              ],
+        Container(
+  height: 40,
+          color: Colors.deepPurple.withOpacity(0.2),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Event 2"),
+                  Text("11 April"),
+                  Text("09:30PM"),
+                 Row(
+                   children: [
+                     Align(
+                       alignment: Alignment.centerLeft,
+                       child: Container(
+                         height: 10,
+                         child: CircleAvatar(
+                           radius: 10,
+                           backgroundColor: Colors.red,
+
+                         ),
+                       ),
+                     ),
+                     Text("Inactive"),
+                   ],
+                 ),
+
+                ],
+              ),
             ),
           ),
         ),
-      ),
 
 
 
-      Container(
-        height: 40,
-        // color :Color(0xFF0E3311).withOpacity(0.5),
-        color: Colors.deepPurple.withOpacity(0.1),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-               // Text("Event 1"),
-               // Text("15 April"),
-              //  Text("09:30PM"),
-               // Text("Active"),
-              ],
+        Container(
+          height: 40,
+          // color :Color(0xFF0E3311).withOpacity(0.5),
+          color: Colors.deepPurple.withOpacity(0.1),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                 // Text("Event 1"),
+                 // Text("15 April"),
+                //  Text("09:30PM"),
+                 // Text("Active"),
+                ],
+              ),
             ),
           ),
         ),
-      ),
 
 
 
-      Container(
-        height: 40,
-        color: Colors.deepPurple.withOpacity(0.2),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-               // Text("event 2"),
-               // Text("11 April"),
-               // Text("09:30PM"),
-               // Text("Inactive"),
-              ],
+        Container(
+          height: 40,
+          color: Colors.deepPurple.withOpacity(0.2),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                 // Text("event 2"),
+                 // Text("11 April"),
+                 // Text("09:30PM"),
+                 // Text("Inactive"),
+                ],
+              ),
             ),
           ),
         ),
-      ),
 
 
 
@@ -197,9 +230,10 @@ height: 40,
 
 
 
-    ],
+      ],
+    ),
+
   ),
-
 )
 
 
